@@ -1,0 +1,25 @@
+.Card-parent {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+  border-radius: 8px;
+}
+
+.card-name {
+  font-size: 18px;
+}
+
+.tutor {
+  font-size: 12px;
+  color: #464747dc;
+  font-weight: 600;
+}
+
+.card-container {
+  gap: 20px;
+  padding: 30px 30px;
+}
+
+.card-container svg {
+  color: rgb(204, 177, 27);
+  font-size: 15px;
+}

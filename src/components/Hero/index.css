@@ -1,0 +1,14 @@
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

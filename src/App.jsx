@@ -3,11 +3,14 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-
+import Courses from "./components/Courses";
+import Brands from "./components/Brands";
+import ViewerFav from "./components/ViewerFav";
+import Offer from "./components/Offer";
 const App = () => {
-  let api = "https://almaazkhan1055.github.io/udemy_data/udemy-data.json";
   const [data, setdata] = useState([]);
-  console.log(data, "jccjkjj");
+  let api = "https://almaazkhan1055.github.io/udemy_data/udemy-data.json";
+  console.log(data);
 
   useEffect(() => {
     fetch(api)
@@ -16,10 +19,14 @@ const App = () => {
       .catch((error) => console.log(error));
   }, []);
   return (
-    <div>
+    <>
       <Header headerData={data?.header} />
       <Hero carousel={data?.carousel} />
-    </div>
+      <Courses courseList={data?.courseList} />
+      <Brands testimonials={data?.testimonials} />
+      <ViewerFav ViewersFav={data?.viewersFav} />
+      <Offer whatWeOffer={data?.whatWeOffer} />
+    </>
   );
 };
 

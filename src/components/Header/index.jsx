@@ -1,13 +1,11 @@
 import React from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import "./index.css";
 // import { CiGlobe } from "react-icons/ci";
 import { IoIosSearch } from "react-icons/io";
 import { IoGlobeSharp } from "react-icons/io5";
+import "./index.css";
 
 const Header = ({ headerData }) => {
-  console.log("hfb", headerData);
-
   return (
     <div className="Header">
       <img src={headerData?.logo} width={100} alt="logo" />
